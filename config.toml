@@ -36,7 +36,8 @@ canonifyURL = true
 [params]
   # Add a name or alias to this list as you go through the workshop.
   Authors = [
-    "Ed St. Louis"
+    "Ed St. Louis",
+    "Nate Thatcher"
   ]
 
   # (Optional, default light) Sets color theme: light, dark or auto.
