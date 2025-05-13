@@ -17,6 +17,11 @@ jobs:
 
       - name: Build
         uses: ./.github/actions/build
+        
+      - name: CLOC
+        uses: ./.github/actions/cloc
+        with:
+          path: public
 
       - name: Deploy
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/init'
@@ -24,3 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+          
